@@ -1,4 +1,8 @@
 /* Reset styles */
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -32,4 +36,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Montserrat', system-ui, sans-serif;
 }

@@ -1,12 +1,17 @@
 export function renderGallery(data) {
+  // Находим элемент галереи
   const gallery = document.querySelector('.list');
 
+  // Проверяем, существует ли элемент галереи
   if (!gallery) {
-    console.error('Gallery element not found');
-    return;
+    console.error('Gallery element not found'); // Выводим сообщение об ошибке в консоль
+    return; // Завершаем выполнение функции
   }
 
+  // Получаем первые 9 изображений из данных
   const imgs = data.hits.slice(0, 9);
+
+  // Заполняем содержимое галереи
   gallery.innerHTML = imgs
     .map(
       ({
@@ -18,6 +23,7 @@ export function renderGallery(data) {
         comments,
         downloads,
       }) => {
+        // Создаем HTML-разметку для каждого изображения
         return `
         <li class="gallery-item">
           <div class="gallery-box item-card-wrapper">
@@ -46,5 +52,5 @@ export function renderGallery(data) {
         </li>`;
       }
     )
-    .join('');
+    .join(''); // Объединяем массив HTML-строк в одну строку
 }

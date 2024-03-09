@@ -1,179 +1,188 @@
 .container {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+  max-width: 1280px; /* Устанавливает максимальную ширину контейнера */
+  padding: 0 15px; /* Добавляет отступы внутри контейнера слева и справа */
+  margin: 0 auto; /* Центрирует контейнер по горизонтали */
+} /* Хорошо структурированный и адаптивный контейнер */
 
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
+  display: flex; /* Устанавливает дисплей флекс-контейнера */
+  align-items: center; /* Выравнивает элементы по вертикали по центру */
+  justify-content: center; /* Выравнивает элементы по горизонтали по центру */
+  gap: 8px; /* Устанавливает промежуток между элементами */
+} /* Гибкая и центрированная форма для ввода данных */
 
 .form > input {
-  width: 272px;
-  height: 40px;
-  border-radius: 4px;
-  padding: 8px 16px;
-  outline: none;
-  border: 1px solid #808080;
+  width: 272px; /* Устанавливает ширину поля ввода */
+  height: 40px; /* Устанавливает высоту поля ввода */
+  border-radius: 4px; /* Закругляет углы поля ввода */
+  padding: 8px 16px; /* Добавляет отступы внутри поля ввода */
+  outline: none; /* Убирает обводку при фокусе */
+  border: 1px solid #808080; /* Устанавливает цвет рамки поля ввода */
 
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+  font-family: 'Montserrat', system-ui, sans-serif; /* Устанавливает шрифт */
+  font-weight: 400; /* Устанавливает насыщенность шрифта */
+  line-height: 1.5; /* Устанавливает высоту строки */
+  letter-spacing: 0.04em; /* Устанавливает расстояние между буквами */
+  color: #2e2f42; /* Устанавливает цвет текста */
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анимация при изменении цвета рамки */
+} /* Стили для поля ввода */
 
 .form > input::placeholder {
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #808080;
-}
+  font-family: 'Montserrat', system-ui, sans-serif; /* Устанавливает шрифт для плейсхолдера */
+  font-weight: 400; /* Устанавливает насыщенность шрифта для плейсхолдера */
+  line-height: 1.5; /* Устанавливает высоту строки для плейсхолдера */
+  letter-spacing: 0.04em; /* Устанавливает расстояние между буквами для плейсхолдера */
+  color: #808080; /* Устанавливает цвет текста для плейсхолдера */
+} /* Стили для плейсхолдера в поле ввода */
 
 .form > input:hover {
-  border-color: #000000;
-}
+  border-color: #000000; /* Устанавливает цвет рамки при наведении на поле ввода */
+} /* Стили для состояния наведения на поле ввода */
 
 .form > input:focus {
-  border-color: #4e75ff;
-}
+  border-color: #4e75ff; /* Устанавливает цвет рамки при фокусе на поле ввода */
+} /* Стили для состояния фокуса на поле ввода */
 
 .form > button {
-  background-color: rgb(78, 117, 255);
-  border-radius: 8px;
-  width: 91px;
-  height: 40px;
-  border: none;
+  background-color: rgb(78, 117, 255); /* Устанавливает цвет фона кнопки */
+  border-radius: 8px; /* Закругляет углы кнопки */
+  width: 91px; /* Устанавливает ширину кнопки */
+  height: 40px; /* Устанавливает высоту кнопки */
+  border: none; /* Убирает границу кнопки */
 
-  font-family: 'Montserrat', system-ui, sans-serif;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  font-family: 'Montserrat', system-ui, sans-serif; /* Устанавливает шрифт для текста кнопки */
+  font-weight: 500; /* Устанавливает насыщенность шрифта для текста кнопки */
+  line-height: 1.5; /* Устанавливает высоту строки для текста кнопки */
+  letter-spacing: 0.04em; /* Устанавливает расстояние между буквами для текста кнопки */
+  color: #ffffff; /* Устанавливает цвет текста кнопки */
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Анимация при изменении цвета фона кнопки */
+} /* Стили для кнопки */
 
 .form > button:hover {
-  background-color: #6c8cff;
-}
+  background-color: #6c8cff; /* Устанавливает цвет фона кнопки при наведении */
+} /* Стили для состояния наведения на кнопку */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 15px;
-  gap: 20px;
-}
+  display: grid; /* Устанавливает дисплей сетки для галереи */
+  grid-template-columns: repeat(
+    1,
+    1fr
+  ); /* Устанавливает шаблон колонок сетки */
+  padding: 15px; /* Добавляет отступы внутри галереи */
+  gap: 20px; /* Устанавливает промежуток между элементами сетки */
+} /* Стили для галереи (один столбец по умолчанию) */
 
 @media screen and (min-width: 768px) {
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    gap: 15px;
+    display: grid; /* Устанавливает дисплей сетки для галереи */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Устанавливает шаблон колонок сетки */
+    padding: 15px; /* Добавляет отступы внутри галереи */
+    gap: 15px; /* Устанавливает промежуток между элементами сетки */
   }
-}
+} /* Медиа-запрос для галереи (два столбца при ширине экрана не менее 768px) */
 
 @media screen and (min-width: 1158px) {
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 15px;
-    gap: 15px;
+    display: grid; /* Устанавливает дисплей сетки для галереи */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Устанавливает шаблон колонок сетки */
+    padding: 15px; /* Добавляет отступы внутри галереи */
+    gap: 15px; /* Устанавливает промежуток между элементами сетки */
   }
-}
+} /* Медиа-запрос для галереи (три столбца при ширине экрана не менее 1158px) */
 
 .gallery-link {
-  overflow: hidden;
-}
+  overflow: hidden; /* Скрывает часть содержимого, выходящего за границы */
+} /* Стили для ссылок в галерее (скрытие выходящего за границы контента) */
 
 .gallery-link {
-  display: block;
-  aspect-ratio: 360 / 230;
-}
+  display: block; /* Устанавливает дисплей блока для ссылок в галерее */
+  aspect-ratio: 360 / 230; /* Устанавливает соотношение сторон для ссылок в галерее */
+} /* Стили для ссылок в галерее (установка соотношения сторон) */
 
 .gallery-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  width: 100%; /* Устанавливает ширину изображения в галерее на 100% */
+  height: 100%; /* Устанавливает высоту изображения в галерее на 100% */
+  object-fit: cover; /* Масштабирует изображение, чтобы оно полностью заполняло контейнер */
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1); /* Анимация при изменении масштаба */
+} /* Стили для изображений в галерее */
 
 .gallery-img:hover {
-  transform: scale(1.1);
-}
+  transform: scale(1.1); /* Увеличивает изображение при наведении */
+} /* Стили для изображений в галерее при наведении */
 
 .card-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
-}
+  display: flex; /* Устанавливает дисплей флекс-контейнера */
+  align-items: center; /* Выравнивает элементы по вертикали */
+  justify-content: space-evenly; /* Распределяет пространство между элементами равномерно */
+  padding: 10px; /* Добавляет отступы внутри блока */
+} /* Стили для блока карточки */
 
 .card-box-text {
-  text-align: center;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
+  text-align: center; /* Выравнивает текст по центру */
+  line-height: 1.5; /* Устанавливает высоту строки */
+  letter-spacing: 0.04em; /* Устанавливает расстояние между буквами */
+} /* Стили для текста в карточке */
 
 .item-card-wrapper {
-  border: 1px solid grey;
-  border-radius: 4px;
-}
+  border: 1px solid grey; /* Устанавливает рамку карточки */
+  border-radius: 4px; /* Закругляет углы карточки */
+} /* Стили для обертки карточки товара */
 
 .sl-wrapper {
-  background-color: #202020db;
-}
+  background-color: #202020db; /* Устанавливает цвет фона для слайдера */
+} /* Стили для обертки слайдера */
 
 .loader {
-  display: block;
-  margin: 20px auto 0;
-  width: 48px;
-  height: 48px;
-  border-width: 3px;
-  border-style: dashed solid solid dotted;
-  border-color: #ff3d00 #ff3d00 transparent #ff3d00;
-  border-radius: 50%;
-  /* display: inline-block; */
-  position: relative;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
+  display: block; /* Устанавливает дисплей блока */
+  margin: 20px auto 0; /* Устанавливает внешние отступы */
+  width: 48px; /* Устанавливает ширину загрузчика */
+  height: 48px; /* Устанавливает высоту загрузчика */
+  border-width: 3px; /* Устанавливает толщину границы */
+  border-style: dashed solid solid dotted; /* Устанавливает стиль границы */
+  border-color: #ff3d00 #ff3d00 transparent #ff3d00; /* Устанавливает цвет границы */
+  border-radius: 50%; /* Закругляет загрузчик */
+  position: relative; /* Устанавливает позиционирование */
+  box-sizing: border-box; /* Учитывает толщину границы в общей ширине и высоте */
+  animation: rotation 1s linear infinite; /* Анимация вращения */
+} /* Стили для загрузчика */
+
 .loader::after {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  left: 20px;
-  top: 31px;
-  border: 10px solid transparent;
-  border-right-color: #ff3d00;
-  transform: rotate(-40deg);
-}
+  content: ''; /* Добавляет пустой контент */
+  box-sizing: border-box; /* Учитывает толщину границы в общей ширине и высоте */
+  position: absolute; /* Устанавливает позиционирование */
+  left: 20px; /* Устанавливает положение слева */
+  top: 31px; /* Устанавливает положение сверху */
+  border: 10px solid transparent; /* Устанавливает стиль и цвет границы */
+  border-right-color: #ff3d00; /* Устанавливает цвет правой границы */
+  transform: rotate(-40deg); /* Поворачивает элемент */
+} /* Стили для элемента после загрузчика */
 
 @keyframes rotation {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Поворот на 0 градусов */
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Поворот на 360 градусов */
   }
-}
+} /* Анимация вращения */
 
 .title {
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  text-transform: uppercase;
-}
+  font-weight: 600; /* Устанавливает насыщенность шрифта */
+  font-size: 25px; /* Устанавливает размер шрифта */
+  line-height: 1.2; /* Устанавливает высоту строки */
+  letter-spacing: 0.04em; /* Устанавливает расстояние между буквами */
+  color: #2e2f42; /* Устанавливает цвет текста */
+  text-transform: uppercase; /* Преобразует текст в верхний регистр */
+} /* Стили для заголовка */
 
 header > .container {
-  padding: 20px 15px;
-}
+  padding: 20px 15px; /* Устанавливает внутренние отступы в заголовке */
+} /* Стили для контейнера в заголовке */
